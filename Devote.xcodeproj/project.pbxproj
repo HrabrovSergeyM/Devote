@@ -30,6 +30,8 @@
 		E97018CC2A659072009289EF /* DevoteWidget.swift in Sources */ = {isa = PBXBuildFile; fileRef = E97018CB2A659072009289EF /* DevoteWidget.swift */; };
 		E97018CE2A659075009289EF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E97018CD2A659075009289EF /* Assets.xcassets */; };
 		E97018D22A659075009289EF /* DevoteWidgetExtension.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = E97018C22A659072009289EF /* DevoteWidgetExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		E97018D72A6595AE009289EF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E970188D2A64DDD1009289EF /* Assets.xcassets */; };
+		E97018D82A659697009289EF /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = E97018AE2A64EA34009289EF /* Constants.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -318,6 +320,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E97018D72A6595AE009289EF /* Assets.xcassets in Resources */,
 				E97018CE2A659075009289EF /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -350,6 +353,7 @@
 			files = (
 				E97018CC2A659072009289EF /* DevoteWidget.swift in Sources */,
 				E97018CA2A659072009289EF /* DevoteWidgetBundle.swift in Sources */,
+				E97018D82A659697009289EF /* Constants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -414,7 +418,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -468,7 +472,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
