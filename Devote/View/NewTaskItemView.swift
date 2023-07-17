@@ -76,8 +76,7 @@ struct NewTaskItemView: View {
                 .disabled(isButtonDisabled)
                 .onTapGesture {
                     if isButtonDisabled {
-                        playSound(sound: "sound-tap", type: "mp3")
-                        feedback.notificationOccurred(.warning)
+                        feedback.notificationOccurred(.error)
                     }
                 }
                 .padding()
