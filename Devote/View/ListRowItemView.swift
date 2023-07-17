@@ -34,8 +34,3 @@ struct ListRowItemView: View {
     }
 }
 
-//struct ListRowItemView_Previews: PreviewProvider {
-//    static var previews: some View {
-//        ListRowItemView()
-//    }
-//}
