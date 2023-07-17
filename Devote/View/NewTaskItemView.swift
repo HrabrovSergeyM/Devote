@@ -18,6 +18,8 @@ struct NewTaskItemView: View {
     
     @Binding var isShowing: Bool
     
+    @AppStorage("isDarkMode") private var isDarkMode: Bool = false
+    
     private var isButtonDisabled: Bool {
         task.isEmpty
     }
@@ -56,7 +58,7 @@ struct NewTaskItemView: View {
                     .font(.system(size: 24, weight: .bold, design: .rounded))
                     .padding()
                     .background(
-                        Color(UIColor.systemGray6)
+                        isDarkMode ? Color(UIColor.tertiarySystemGroupedBackground) : Color(UIColor.secondarySystemBackground)
                     )
                     .cornerRadius(10)
                     .focused($taskIsFocused)
@@ -80,7 +82,7 @@ struct NewTaskItemView: View {
             } // VStack
             .padding(.horizontal)
             .padding(.vertical, 20)
-            .background(.white)
+            .background(isDarkMode ? Color(UIColor.secondarySystemBackground) : .white)
             .cornerRadius(16)
             .shadow(color: Color(red: 0, green: 0, blue: 0, opacity: 0.3), radius: 24)
             .frame(maxWidth: 640)
@@ -88,8 +90,6 @@ struct NewTaskItemView: View {
         .padding()
     }
 }
-
-
 
 struct NewTaskItemView_Previews: PreviewProvider {
     static var previews: some View {
